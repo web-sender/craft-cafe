@@ -1,0 +1,217 @@
+{
+  "home": {
+    "header": {
+      "title": "匠心咖啡馆",
+      "langEN": "英语",
+      "langRU": "俄语",
+      "langZH": "中文",
+      "selectLanguage": "选择语言",
+      "openMenu": "打开菜单",
+      "closeMenu": "关闭菜单",
+      "nav": {
+        "home": "首页",
+        "catalog": "菜单",
+        "blog": "故事",
+        "about": "关于我们",
+        "gallery": "瞬间"
+      },
+      "social": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "twitter": "Twitter"
+      }
+    },
+    "feature": {
+      "sectionImage": "/section/feature.webp",
+      "card": {
+        "title": "纽约匠心咖啡馆",
+        "description": "坐落于纽约市中心，我们的咖啡馆提供手工咖啡、新鲜本地美食和温馨氛围。无论是短暂休憩还是与朋友小聚，这里都是理想之地。",
+        "button": "浏览菜单"
+      }
+    },
+    "coffeeCakes": {
+      "title": "咖啡与甜点",
+      "parts": [
+        { "image": "/decor_coffee_beans.webp" },
+        {
+          "description": "我们的咖啡融合了来自埃塞俄比亚、哥伦比亚和巴西的优质咖啡豆，专为追求醇厚口感的爱好者打造。每粒咖啡豆都经过精心挑选和烘焙，展现独特风味。"
+        },
+        {
+          "title": "浓郁平衡的意式浓缩",
+          "description": "我们的意式浓缩口感浓郁，甜味与酸度完美平衡，适合制作拿铁和卡布奇诺等奶咖饮品。选用小型农场咖啡豆，与我们的招牌甜点相得益彰。"
+        },
+        {
+          "title": "季节性单一产地咖啡",
+          "description": "探索我们的季节性单一产地滴滤咖啡和冷萃系列，展现各地独特的风味。从明亮的埃塞俄比亚耶加雪菲到柔顺的哥伦比亚乌伊拉，每杯都是味蕾的旅程。"
+        },
+        {
+          "description": "每日手工制作的蛋糕和甜点，与我们的咖啡相辅相成。从酥脆的羊角面包到浓郁的巧克力塔，每一口都为您带来精致的享受。"
+        },
+        { "image": "/decor_cup_of_coffee.webp" }
+      ]
+    },
+    "services": {
+      "sectionImage": "/section/services.webp",
+      "cards": [
+        {
+          "title": "我们的故事",
+          "description": "纽约的温馨咖啡馆，以匠心打造难忘的美好时光。"
+        },
+        {
+          "title": "我们的美食",
+          "description": "新鲜本地食材，精心烹制成美味且富有层次的菜肴。"
+        },
+        {
+          "title": "我们的饮品",
+          "description": "匠心饮品，独特风味，呈现完美的味觉享受。"
+        },
+        {
+          "title": "招牌咖啡",
+          "description": "精选全球优质咖啡豆，手工调配，充满热情的咖啡体验。"
+        }
+      ]
+    },
+    "categoryList": {
+      "sectionImage": "/section/category.webp",
+      "categories": [
+        { "title": "手工冰淇淋" },
+        { "title": "新鲜果味冰霜" },
+        { "title": "独特薯片风味" },
+        { "title": "奢华圣代" },
+        { "title": "果昔饮品" },
+        { "title": "特色饮品" }
+      ]
+    },
+    "popularDishes": {
+      "title": "人气之选",
+      "dishes": [
+        {
+          "image": "/popular/tiramisu_cake.webp",
+          "title": "提拉米苏",
+          "description": "经典提拉米苏，奶油马斯卡彭搭配浓郁意式浓缩风味。",
+          "price": "$8.50"
+        },
+        {
+          "image": "/popular/chia_pudding.webp",
+          "title": "奇亚籽果昔布丁",
+          "description": "混合浆果与酸奶，口感清新，甜美宜人。",
+          "price": "$6.00"
+        },
+        {
+          "image": "/popular/cheesecake.webp",
+          "title": "纽约芝士蛋糕",
+          "description": "丝滑芝士蛋糕搭配全麦饼干底，纯粹的享受。",
+          "price": "$4.50"
+        },
+        {
+          "image": "/popular/chocolate_cake.webp",
+          "title": "浓情巧克力蛋糕",
+          "description": "浓郁巧克力蛋糕，层层叠加丝滑巧克力酱，甜蜜诱惑。",
+          "price": "$9.00"
+        },
+        {
+          "image": "/popular/cheesecake_light.webp",
+          "title": "柠檬覆盆子芝士蛋糕",
+          "description": "清新柠檬芝士蛋糕，点缀酸甜覆盆子酱，活力四射。",
+          "price": "$10.00"
+        },
+        {
+          "image": "/popular/orange_cake.webp",
+          "title": "橙花酥皮点心",
+          "description": "酥脆点心融入橙花香气，内含浓郁巧克力馅料。",
+          "price": "$3.50"
+        }
+      ]
+    },
+    "cakeDessert": {
+      "title": "蛋糕与甜蜜时光",
+      "button": "探索更多",
+      "stories": [
+        { "title": "stories", "image": "/stories/stories_0.webp" },
+        { "title": "stories", "image": "/stories/stories_1.webp" },
+        { "title": "stories", "image": "/stories/stories_2.webp" },
+        { "title": "stories", "image": "/stories/stories_3.webp" },
+        { "title": "stories", "image": "/stories/stories_4.webp" },
+        { "title": "stories", "image": "/stories/stories_5.webp" }
+      ]
+    },
+    "additionalInfo": {
+      "sectionImage": "/section/vegetarian_menu.webp",
+      "title": "素食臻选",
+      "description": "我们的素食菜单选用新鲜本地食材，精心制作成美味健康的菜肴。从色彩鲜艳的沙拉到营养丰富的谷物碗，每日为您带来植物基的美味体验。",
+      "button": "立即探索"
+    },
+    "coffeeTea": {
+      "sectionImage": "/section/invocation.webp",
+      "subtitle": "曼哈顿的优雅角落",
+      "title": "精选咖啡与茶饮"
+    },
+    "contact": {
+      "sectionImage": "/section/contact_us.webp",
+      "title": "与我们联系",
+      "fields": {
+        "name": "姓名",
+        "email": "电子邮件",
+        "message": "留言",
+        "namePlaceholder": "请输入您的姓名",
+        "emailPlaceholder": "请输入有效的电子邮件地址"
+      },
+      "agreement": {
+        "text": "我接受",
+        "link": "服务条款"
+      },
+      "button": "发送留言"
+    },
+    "footer": {
+      "nav": {
+        "feature": "欢迎体验",
+        "coffee-cakes": "咖啡与甜点",
+        "services": "我们的特色",
+        "category-list": "菜单分类",
+        "popular": "热门推荐",
+        "additional-info": "更多信息",
+        "stories": "我们的故事",
+        "invocation": "加入我们",
+        "contact": "联系我们"
+      },
+      "explore": {
+        "title": "探索更多",
+        "links": {
+          "catalog": "菜单",
+          "blog": "故事",
+          "about": "关于我们",
+          "gallery": "瞬间"
+        }
+      },
+      "contact": {
+        "title": "联系方式",
+        "address": "纽约曼哈顿咖啡巷123号",
+        "email": "hello@craftcafe.com",
+        "phone": "(123) 456-7890"
+      },
+      "connect": {
+        "title": "保持联系",
+        "links": {
+          "instagram": {
+            "label": "Instagram",
+            "logoSrc": "/icon/social/instagram.webp"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "logoSrc": "/icon/social/facebook.webp"
+          },
+          "twitter": {
+            "label": "Twitter",
+            "logoSrc": "/icon/social/twitter.webp"
+          }
+        }
+      },
+      "subscribe": {
+        "title": "加入我们的社区",
+        "placeholder": "请输入您的电子邮件",
+        "button": "订阅"
+      },
+      "established": "自 2025 年起经营 Craft-Cafe。"
+    }
+  }
+}

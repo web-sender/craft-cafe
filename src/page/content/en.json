@@ -1,0 +1,217 @@
+{
+  "home": {
+    "header": {
+      "title": "Craft Cafe",
+      "langEN": "English",
+      "langRU": "Russian",
+      "langZH": "Chinese",
+      "selectLanguage": "Choose Your Language",
+      "openMenu": "Open Menu",
+      "closeMenu": "Close Menu",
+      "nav": {
+        "home": "Home",
+        "catalog": "Menu",
+        "blog": "Stories",
+        "about": "Our Story",
+        "gallery": "Moments"
+      },
+      "social": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "twitter": "Twitter"
+      }
+    },
+    "feature": {
+      "sectionImage": "/section/feature.webp",
+      "card": {
+        "title": "Artisanal Craft Cafe in NYC",
+        "description": "Nestled in the heart of New York City, our cozy cafe offers handcrafted coffee, fresh local dishes, and a warm atmosphere. Perfect for a relaxing break or a quick escape from the city buzz.",
+        "button": "Explore Menu"
+      }
+    },
+    "coffeeCakes": {
+      "title": "Coffee & Pastries",
+      "parts": [
+        { "image": "/decor_coffee_beans.webp" },
+        {
+          "description": "Our coffee is a harmonious blend of beans sourced from Ethiopia, Colombia, and Brazil, crafted for enthusiasts who savor depth and complexity. Each cup tells a story of sustainable farming and meticulous roasting."
+        },
+        {
+          "title": "Rich Espresso with Perfect Balance",
+          "description": "Our espresso boasts a rich flavor with a delicate balance of sweetness and acidity, ideal for milk-based drinks like lattes and cappuccinos. Sourced from small-batch farms, it pairs beautifully with our signature pastries."
+        },
+        {
+          "title": "Seasonal Single Origin Drip Coffees",
+          "description": "Explore our unique lineup of seasonal Single Origin Drip Coffees and Cold Brews, each highlighting distinct regional flavors. From bright Ethiopian Yirgacheffe to smooth Colombian Huila, enjoy a curated coffee experience."
+        },
+        {
+          "description": "Handcrafted cakes and pastries, freshly baked daily to complement our coffee. From buttery croissants to decadent chocolate tarts, each bite is designed to enhance your cafe experience."
+        },
+        { "image": "/decor_cup_of_coffee.webp" }
+      ]
+    },
+    "services": {
+      "sectionImage": "/section/services.webp",
+      "cards": [
+        {
+          "title": "Our Story",
+          "description": "A welcoming cafe in NYC, crafted with care to create memorable moments."
+        },
+        {
+          "title": "Our Cuisine",
+          "description": "Fresh, local ingredients transformed into thoughtful, flavorful dishes."
+        },
+        {
+          "title": "Our Beverages",
+          "description": "Artisanal drinks with unique flavor profiles, crafted to perfection."
+        },
+        {
+          "title": "Signature Coffee",
+          "description": "Handcrafted blends from the finest global beans, brewed with passion."
+        }
+      ]
+    },
+    "categoryList": {
+      "sectionImage": "/section/category.webp",
+      "categories": [
+        { "title": "Artisan Ice Cream" },
+        { "title": "Fresh Fruit Sorbets" },
+        { "title": "Unique Chip Flavors" },
+        { "title": "Decadent Sundaes" },
+        { "title": "Blended Smoothies" },
+        { "title": "Specialty Drinks" }
+      ]
+    },
+    "popularDishes": {
+      "title": "Signature Offerings",
+      "dishes": [
+        {
+          "image": "/popular/tiramisu_cake.webp",
+          "title": "Tiramisu Delight",
+          "description": "Classic tiramisu with creamy mascarpone and bold espresso notes.",
+          "price": "$8.50"
+        },
+        {
+          "image": "/popular/chia_pudding.webp",
+          "title": "Chia Berry Pudding",
+          "description": "Blended berries with creamy yogurt and chia, refreshingly sweet.",
+          "price": "$6.00"
+        },
+        {
+          "image": "/popular/cheesecake.webp",
+          "title": "New York Cheesecake",
+          "description": "Velvety cheesecake with a graham cracker crust, pure indulgence.",
+          "price": "$4.50"
+        },
+        {
+          "image": "/popular/chocolate_cake.webp",
+          "title": "Chocolate Decadence Cake",
+          "description": "Rich chocolate cake layered with silky ganache, a true treat.",
+          "price": "$9.00"
+        },
+        {
+          "image": "/popular/cheesecake_light.webp",
+          "title": "Lemon Raspberry Cheesecake",
+          "description": "Zesty lemon cheesecake with tart raspberry swirls, vibrant and fresh.",
+          "price": "$10.00"
+        },
+        {
+          "image": "/popular/orange_cake.webp",
+          "title": "Orange Blossom Pastry",
+          "description": "Flaky pastry infused with orange blossom, filled with rich chocolate.",
+          "price": "$3.50"
+        }
+      ]
+    },
+    "cakeDessert": {
+      "title": "Cakes & Sweet Delights",
+      "button": "Discover More",
+      "stories": [
+        { "title": "stories", "image": "/stories/stories_0.webp" },
+        { "title": "stories", "image": "/stories/stories_1.webp" },
+        { "title": "stories", "image": "/stories/stories_2.webp" },
+        { "title": "stories", "image": "/stories/stories_3.webp" },
+        { "title": "stories", "image": "/stories/stories_4.webp" },
+        { "title": "stories", "image": "/stories/stories_5.webp" }
+      ]
+    },
+    "additionalInfo": {
+      "sectionImage": "/section/vegetarian_menu.webp",
+      "title": "Plant-Based Delights",
+      "description": "Our vegetarian menu showcases fresh, locally sourced ingredients crafted into wholesome, flavorful dishes. From vibrant salads to hearty grain bowls, enjoy plant-based options daily.",
+      "button": "Explore Now"
+    },
+    "coffeeTea": {
+      "sectionImage": "/section/invocation.webp",
+      "subtitle": "Manhattan’s Cozy Retreat",
+      "title": "Specialty Coffee & Tea Creations"
+    },
+    "contact": {
+      "sectionImage": "/section/contact_us.webp",
+      "title": "Connect With Us",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "namePlaceholder": "Enter Your Name",
+        "emailPlaceholder": "Enter a Valid Email Address"
+      },
+      "agreement": {
+        "text": "I accept the",
+        "link": "Terms of Service"
+      },
+      "button": "Send Message"
+    },
+    "footer": {
+      "nav": {
+        "feature": "Welcome",
+        "coffee-cakes": "Coffee & Pastries",
+        "services": "Our Offerings",
+        "category-list": "Menu Categories",
+        "popular": "Favorites",
+        "additional-info": "More Info",
+        "stories": "Our Stories",
+        "invocation": "Join Us",
+        "contact": "Get in Touch"
+      },
+      "explore": {
+        "title": "Discover",
+        "links": {
+          "catalog": "Menu",
+          "blog": "Stories",
+          "about": "Our Story",
+          "gallery": "Moments"
+        }
+      },
+      "contact": {
+        "title": "Contact Us",
+        "address": "123 Coffee Lane, Manhattan, NYC",
+        "email": "hello@craftcafe.com",
+        "phone": "(123) 456-7890"
+      },
+      "connect": {
+        "title": "Stay Connected",
+        "links": {
+          "instagram": {
+            "label": "Instagram",
+            "logoSrc": "/icon/social/instagram.webp"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "logoSrc": "/icon/social/facebook.webp"
+          },
+          "twitter": {
+            "label": "Twitter",
+            "logoSrc": "/icon/social/twitter.webp"
+          }
+        }
+      },
+      "subscribe": {
+        "title": "Join Our Community",
+        "placeholder": "Enter Your Email",
+        "button": "Subscribe"
+      },
+      "established": "Craft-Cafe from 2025"
+    }
+  }
+}

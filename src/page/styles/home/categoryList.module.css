@@ -1,0 +1,104 @@
+.sectionOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.sectionMain {
+  position: relative;
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-background);
+  overflow: hidden;
+}
+.sectionImage {
+  object-fit: cover;
+}
+
+.sectionInner {
+  width: 100%;
+}
+
+.categoryListOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.categoryListMain {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.categoryListInner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.categoryOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.categoryMain {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background-color: var(--color-background-alt-dark-opacity);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transform: scale(0);
+  opacity: .4;
+  transition: all .9s ease-out;
+}
+.categoryOuter.visible .categoryMain {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.categoryMain:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(43, 43, 56, 0.15); /* Adjusted shadow for dark mode */
+}
+
+.categoryInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.categoryLogoContainer {
+  width: 48px;
+  height: 48px;
+}
+
+.categoryTitle {
+  font-family: Sans-Serif;
+  font-size: var(--font-size-md);
+  letter-spacing: calc(var(--font-size-xs) / 15);
+  font-weight: 600;
+  color: var(--color-text-alt);
+  text-align: center;
+}
+html[data-theme="night"] .categoryTitle {
+  color: var(--color-text-light);
+}
+
+@media (min-width: 768px) {
+  .categoryListInner {
+    margin-left: 33.33%; /* Смещение вправо на ширину одной колонки (1/3) */
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionMain {
+    padding: calc(var(--spacing-xl) * 1.5) var(--spacing-lg);
+  }
+  .categoryListInner {
+    grid-template-columns: repeat(3, 1fr);
+    width: 55%; /* Половина ширины справа */
+    margin-left: auto;
+  }
+  .categoryTitle {
+    font-size: var(--font-size-sm);
+  }
+}

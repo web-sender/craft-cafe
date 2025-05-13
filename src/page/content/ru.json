@@ -1,0 +1,217 @@
+{
+  "home": {
+    "header": {
+      "title": "Крафт Кафе",
+      "langEN": "Английский",
+      "langRU": "Русский",
+      "langZH": "Китайский",
+      "selectLanguage": "Выберите язык",
+      "openMenu": "Открыть меню",
+      "closeMenu": "Закрыть меню",
+      "nav": {
+        "home": "Главная",
+        "catalog": "Меню",
+        "blog": "Истории",
+        "about": "О нас",
+        "gallery": "Моменты"
+      },
+      "social": {
+        "instagram": "Инстаграм",
+        "facebook": "Фейсбук",
+        "twitter": "Твиттер"
+      }
+    },
+    "feature": {
+      "sectionImage": "/section/feature.webp",
+      "card": {
+        "title": "Уютное Крафт Кафе в Нью-Йорке",
+        "description": "Расположенное в сердце Нью-Йорка, наше кафе предлагает ароматный кофе ручной работы, свежие блюда из местных продуктов и тёплую атмосферу. Идеальное место для отдыха или встречи с друзьями.",
+        "button": "Посмотреть меню"
+      }
+    },
+    "coffeeCakes": {
+      "title": "Кофе и выпечка",
+      "parts": [
+        { "image": "/decor_coffee_beans.webp" },
+        {
+          "description": "Наш кофе — это гармоничное сочетание зёрен из Эфиопии, Колумбии и Бразилии, созданное для ценителей глубокого вкуса. Каждое зерно проходит тщательный отбор и обжарку, чтобы раскрыть уникальный характер."
+        },
+        {
+          "title": "Насыщенный эспрессо с идеальным балансом",
+          "description": "Наш эспрессо радует насыщенным вкусом с тонким балансом сладости и кислинки, идеально подходя для латте и капучино. Зёрна из небольших ферм прекрасно сочетаются с нашими фирменными десертами."
+        },
+        {
+          "title": "Сезонные кофе сорта Single Origin",
+          "description": "Попробуйте нашу коллекцию сезонных кофе Single Origin и холодных напитков, раскрывающих уникальные вкусы регионов. От яркого эфиопского Йиргачеффе до мягкого колумбийского Уила — каждый глоток это путешествие."
+        },
+        {
+          "description": "Свежая выпечка и десерты, приготовленные вручную каждый день, чтобы дополнить вкус нашего кофе. От хрустящих круассанов до нежных шоколадных тартов — наслаждение в каждом кусочке."
+        },
+        { "image": "/decor_cup_of_coffee.webp" }
+      ]
+    },
+    "services": {
+      "sectionImage": "/section/services.webp",
+      "cards": [
+        {
+          "title": "Наша история",
+          "description": "Уютное кафе в Нью-Йорке, созданное с любовью для ваших тёплых моментов."
+        },
+        {
+          "title": "Наша кухня",
+          "description": "Свежие местные продукты, превращённые в изысканные и душевные блюда."
+        },
+        {
+          "title": "Наши напитки",
+          "description": "Ремесленные напитки с уникальными вкусами, созданные с заботой."
+        },
+        {
+          "title": "Фирменный кофе",
+          "description": "Кофейные смеси ручной работы из лучших зёрен мира, приготовленные с душой."
+        }
+      ]
+    },
+    "categoryList": {
+      "sectionImage": "/section/category.webp",
+      "categories": [
+        { "title": "Ремесленное мороженое" },
+        { "title": "Фруктовые сорбеты" },
+        { "title": "Необычные вкусы чипсов" },
+        { "title": "Роскошные сандэ" },
+        { "title": "Смузи" },
+        { "title": "Напитки и не только" }
+      ]
+    },
+    "popularDishes": {
+      "title": "Любимые блюда",
+      "dishes": [
+        {
+          "image": "/popular/tiramisu_cake.webp",
+          "title": "Тирамису",
+          "description": "Классический тирамису с кремовым маскарпоне и яркими нотами эспрессо.",
+          "price": "8.50 $"
+        },
+        {
+          "image": "/popular/chia_pudding.webp",
+          "title": "Пудинг с чиа и ягодами",
+          "description": "Смесь ягод с кремовым йогуртом и чиа, лёгкая и освежающая сладость.",
+          "price": "6.00 $"
+        },
+        {
+          "image": "/popular/cheesecake.webp",
+          "title": "Нью-йоркский чизкейк",
+          "description": "Нежный чизкейк с корочкой из печенья, настоящий вкус удовольствия.",
+          "price": "4.50 $"
+        },
+        {
+          "image": "/popular/chocolate_cake.webp",
+          "title": "Шоколадный торт",
+          "description": "Насыщенный шоколадный торт с шелковистым ганашем, истинное наслаждение.",
+          "price": "9.00 $"
+        },
+        {
+          "image": "/popular/cheesecake_light.webp",
+          "title": "Лимонно-малиновый чизкейк",
+          "description": "Яркий лимонный чизкейк с малиновыми завитками, свежий и лёгкий.",
+          "price": "10.00 $"
+        },
+        {
+          "image": "/popular/orange_cake.webp",
+          "title": "Пирожное с апельсиновым цветом",
+          "description": "Слоёное пирожное с ароматом апельсинового цвета и насыщенным шоколадом.",
+          "price": "3.50 $"
+        }
+      ]
+    },
+    "cakeDessert": {
+      "title": "Торты и десерты",
+      "button": "Узнать больше",
+      "stories": [
+        { "title": "stories", "image": "/stories/stories_0.webp" },
+        { "title": "stories", "image": "/stories/stories_1.webp" },
+        { "title": "stories", "image": "/stories/stories_2.webp" },
+        { "title": "stories", "image": "/stories/stories_3.webp" },
+        { "title": "stories", "image": "/stories/stories_4.webp" },
+        { "title": "stories", "image": "/stories/stories_5.webp" }
+      ]
+    },
+    "additionalInfo": {
+      "sectionImage": "/section/vegetarian_menu.webp",
+      "title": "Вегетарианские радости",
+      "description": "Наше вегетарианское меню включает свежие местные ингредиенты, превращённые в сытные и вкусные блюда. От ярких салатов до питательных боулов — наслаждайтесь растительными вкусами каждый день.",
+      "button": "Посмотреть сейчас"
+    },
+    "coffeeTea": {
+      "sectionImage": "/section/invocation.webp",
+      "subtitle": "Уютный уголок Манхэттена",
+      "title": "Фирменный кофе и чай"
+    },
+    "contact": {
+      "sectionImage": "/section/contact_us.webp",
+      "title": "Свяжитесь с нами",
+      "fields": {
+        "name": "Имя",
+        "email": "Электронная почта",
+        "message": "Сообщение",
+        "namePlaceholder": "Введите ваше имя",
+        "emailPlaceholder": "Введите действительный email"
+      },
+      "agreement": {
+        "text": "Я принимаю",
+        "link": "Условия обслуживания"
+      },
+      "button": "Отправить сообщение"
+    },
+    "footer": {
+      "nav": {
+        "feature": "Добро пожаловать",
+        "coffee-cakes": "Кофе и выпечка",
+        "services": "Наши предложения",
+        "category-list": "Категории меню",
+        "popular": "Фавориты",
+        "additional-info": "Дополнительно",
+        "stories": "Наши истории",
+        "invocation": "Присоединяйтесь",
+        "contact": "Связаться"
+      },
+      "explore": {
+        "title": "Исследуйте",
+        "links": {
+          "catalog": "Меню",
+          "blog": "Истории",
+          "about": "О нас",
+          "gallery": "Моменты"
+        }
+      },
+      "contact": {
+        "title": "Контакты",
+        "address": "Кофейная ул., 123, Манхэттен, Нью-Йорк",
+        "email": "hello@craftcafe.com",
+        "phone": "(123) 456-7890"
+      },
+      "connect": {
+        "title": "Оставайтесь на связи",
+        "links": {
+          "instagram": {
+            "label": "Instagram",
+            "logoSrc": "/icon/social/instagram.webp"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "logoSrc": "/icon/social/facebook.webp"
+          },
+          "twitter": {
+            "label": "Twitter",
+            "logoSrc": "/icon/social/twitter.webp"
+          }
+        }
+      },
+      "subscribe": {
+        "title": "Присоединяйтесь к нам",
+        "placeholder": "Введите ваш email",
+        "button": "Подписаться"
+      },
+      "established": "Craft-Cafe с 2025"
+    }
+  }
+}

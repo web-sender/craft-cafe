@@ -1,0 +1,22 @@
+.themesManager {
+  display: flex;
+  flex-direction: column;
+  width: calc(35px + 2vw);
+  height: calc(35px + 2vw);
+  overflow: hidden;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all .3s ease-out;
+}
+
+.canvas {
+  cursor: pointer;
+  background-color: black;
+}
+
+.globe {
+  cursor: pointer;
+  background-color: var(--color-background-alt);
+  color: #f8e8d8;
+}

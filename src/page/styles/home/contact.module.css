@@ -1,0 +1,197 @@
+.sectionOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.sectionMain {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-background); /* Creamy off-white / Dark coffee */
+}
+
+.sectionInner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-surface-light);
+  overflow: hidden;
+}
+.image {
+  object-fit: cover;
+}
+
+.formWrapper {
+  width: 100%;
+  padding: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.formTitle {
+  font-family: 'Georgia', serif;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: var(--color-text); /* Dark chocolate / Creamy white */
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  width: 100%;
+}
+
+.fieldLabel {
+  font-family: 'Georgia', serif;
+  font-size: var(--font-size-md);
+  color: var(--color-text); /* Dark chocolate / Creamy white */
+}
+
+.input,
+.textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-text); /* Dark chocolate / Creamy white */
+  font-family: Sans-Serif;
+  font-size: var(--font-size-md);
+  color: var(--color-text); /* Dark chocolate / Creamy white */
+  padding: var(--spacing-xs);
+  outline: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-light); /* Soft mocha / Light caramel */
+  opacity: .7;
+}
+
+.textarea {
+  height: calc(var(--font-size-md) * 3 + var(--spacing-xs) * 2);
+  resize: none;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.agreementLabel {
+  font-family: 'Georgia', serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light); /* Soft mocha / Light caramel */
+}
+
+.agreementLink {
+  color: var(--color-accent); /* Sandy caramel */
+  text-decoration: none;
+}
+
+.agreementLink:hover {
+  text-decoration: underline;
+}
+
+.submitButton {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-background-alt-dark); /* Deep caramel */
+  color: var(--color-text-alt); /* Dark chocolate / Creamy white */
+  border: none;
+  border-radius: var(--radius-xl);
+  font-family: sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  box-shadow: 0 0 var(--spacing-xs) var(--color-surface-alt);
+  transform: scale(.97);
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    padding: 0;
+  }
+  .formWrapper {
+    padding: var(--spacing-lg);
+  }
+  .form {
+    width: 100%;
+    padding: 0;
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionMain {
+    padding: 0 var(--spacing-md);
+  }
+  .contentContainer {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .imageWrapper {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .formWrapper {
+    width: 50%;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  .form {
+    width: 100%;
+    padding: 0;
+    gap: var(--spacing-sm);
+  }
+  
+  .formTitle {
+    text-align: left;
+    font-size: var(--font-size-lg);
+  }
+  .fieldLabel, .formField, .submitButton, .input, .textarea {
+    font-size: var(--font-size-sm);
+  }
+  .textarea {
+    height: calc(var(--font-size-sm) * 3 + var(--spacing-xs) * 2);
+  }
+  .submitButton {
+    padding: var(--spacing-xs) var(--spacing-lg);
+  }
+}

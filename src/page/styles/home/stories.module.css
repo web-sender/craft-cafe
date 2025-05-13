@@ -1,0 +1,92 @@
+.sectionOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.sectionMain {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-background); /* Creamy off-white / Dark coffee */
+}
+
+.sectionInner {
+  width: 100%;
+}
+
+.sectionTitle {
+  font-family: 'Georgia', serif;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text); /* Dark chocolate / Creamy white */
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.cardListOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.cardListMain {
+  padding: var(--spacing-sm) var(--spacing-sm);
+}
+
+.cardListInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.cardOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.cardMain {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-background-alt); /* Light creamy / Medium coffee */
+  background-size: cover;
+  background-position: center;
+}
+.cardImage {
+  object-fit: cover;
+}
+
+.sectionButton {
+  display: block;
+  margin: var(--spacing-lg) auto 0;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: 1px solid var(--color-accent);
+  border-left: 2px solid var(--color-accent);
+  border-right: 2px solid var(--color-accent);
+  border-radius: var(--radius-xl);
+  font-family: 'Georgia', serif;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: all .3s ease, transform .2s ease-in-out;
+}
+
+.sectionButton:hover {
+  background-color: var(--color-accent-dark); /* Deep caramel */
+  color: var(--color-text-alt);
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .cardListMain {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  .cardListInner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardListMain {
+    padding: var(--spacing-sm) var(--spacing-xl);
+  }
+  .cardListInner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

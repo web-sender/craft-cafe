@@ -1,0 +1,99 @@
+.sectionNavOuter {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.sectionNav {
+  overflow-x: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+  transition: all .5s ease-out;
+}
+
+.sectionNav::-webkit-scrollbar {
+  display: none;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+}
+.toLeft, .toRight {
+  position: relative;
+  user-select: none;
+}
+.toLeft:hover, .toLeft:focus,
+.toRight:hover, .toRight:focus {
+  background-color: var(--color-accent-light);
+}
+
+.toLeft::before, .toRight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  background-color: var(--color-accent);
+  transition: all .35s ease-out;
+}
+.toLeft:hover::before, .toRight:hover::before {
+  background-color: var(--color-accent-dark);
+}
+
+.toLeft::before {
+  right: 0%;
+  clip-path: polygon(
+    60% 10%,   /* Верхняя точка выреза */
+    80% 50%,   /* Центральная точка выреза (вогнутость) */
+    60% 90%,   /* Нижняя точка выреза */
+    0 50%      /* Острие стрелки (слева) */
+  );
+}
+.toRight::before {
+  left: 0%;
+  clip-path: polygon(
+    40% 10%, /* Верхняя точка выреза */
+    20% 50%, /* Центральная точка выреза (вогнутость) */
+    40% 90%, /* Нижняя точка выреза */
+    100% 50% /* Острие стрелки */
+  );
+}
+
+.sectionNavList {
+  flex: 1;
+  display: flex;
+  transition: all .5s ease-out;
+}
+
+.sectionNavItem {
+  margin-right: var(--spacing-md);
+  flex-shrink: 0;
+  transition: all .4s ease-out;
+  opacity: 1;
+}
+
+.sectionNavLink, .toLeft, .toRight {
+  display: inline-block;
+  background: var(--color-background);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-xl);
+  user-select: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sectionNavLink:hover,
+.sectionNavLink:focus {
+  background: var(--color-accent);
+  color: var(--color-background);
+}

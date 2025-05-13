@@ -1,0 +1,174 @@
+.sectionOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.sectionMain {
+  background-color: var(--color-background-alt-dark);
+  /* Deeper coffee */
+}
+
+.sectionInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundArea {
+  width: 100%;
+  height: calc(200px + 30vw);
+  /* Light creamy / Medium coffee */
+  background-color: var(--color-background);
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
+  gap: calc(var(--spacing-xl) * 2);
+  margin-top: calc((100px + 20vw) * -1);
+  width: 100%;
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 7 / 6;
+  background-color: var(--color-surface-light);
+  border: 1px solid var(--color-surface-alt);
+  border-radius: var(--radius-lg);
+  z-index: 2;
+  transform: skew(-45deg, -45deg) translateX(-100%);
+  transition: all .4s ease-out;
+  overflow: hidden;
+}
+.cardImage {
+  object-fit: cover;
+}
+
+.cardContainer.visible .cardImageContainer {
+  transform: skew(0deg, 0deg) translateX(0%);
+  transition: all 1.1s ease-out;
+}
+
+.decorTopRight {
+  position: absolute;
+  width: calc(145px + 6vw);
+  height: calc(140px + 51vw);
+  background-color: var(--color-accent);
+  /* Sandy caramel */
+  border-radius: var(--radius-lg);
+  z-index: 1;
+  top: -9vw;
+  right: -7vw;
+  opacity: .6;
+  transform: translateY(100%);
+  transition: all .4s ease-out;
+}
+
+.cardContainer.visible .decorTopRight {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1.1s ease-out;
+}
+
+.cardContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-surface);
+  /* Warm caramel / Dark coffee brown */
+  padding: var(--spacing-lg) var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-surface-alt);
+  /* Semi-transparent coffee */
+  text-align: left;
+  transform: scale(0);
+  opacity: .1;
+  transition: all .4s ease-out;
+  z-index: 3;
+}
+
+.cardContainer.visible .cardContent {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1.1s ease-out;
+}
+
+.cardSubtitle {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: var(--font-size-md);
+  font-weight: 300;
+  color: var(--color-text-light);
+  /* Soft mocha / Light caramel */
+  margin-bottom: var(--spacing-sm);
+}
+
+.cardTitle {
+  font-family: Sans-Serif;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  /* Dark chocolate / Creamy white */
+  margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    position: relative;
+    padding: var(--spacing-xl);
+  }
+  
+  .cardImageWrapper {
+    width: 75%;
+  }
+  
+  .cardImageContainer {
+    aspect-ratio: 5 / 4;
+  }
+  
+  .cardContent {
+    position: relative;
+    left: 5%;
+    width: 75%;
+    transform: scale(.5) translateX(-20%);
+    margin-top: -30%;
+    z-index: 5;
+  }
+  
+  .cardContainer.visible .cardContent {
+    transform: scale(1) translateX(-20%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardImageContainer {
+    aspect-ratio: 5 / 3;
+  }
+  .decorTopRight {
+    width: calc(145px + 4vw);
+    height: calc(140px + 40vw);
+    top: -6vw;
+    right: -5vw;
+  }
+  .cardContent {
+    left: -5%;
+    width: 55%;
+    margin-top: -20%;
+  }
+  .cardSubtitle {
+    font-size: var(--font-size-md);
+  }
+  .cardTitle {
+    font-size: var(--font-size-lg);
+  }
+}

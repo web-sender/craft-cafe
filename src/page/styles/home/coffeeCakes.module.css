@@ -1,0 +1,151 @@
+.sectionOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.sectionMain {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-background); /* Creamy off-white / Dark coffee */
+}
+
+.sectionInner {
+  width: 100%;
+}
+
+.sectionTitle {
+  font-family: Sans-Serif;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  letter-spacing: calc(var(--font-size-xs) / 9);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.partListOuter {
+  /* Верхний контейнер для тестирования */
+}
+
+.partListInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+
+.partInner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.partImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid var(--color-surface-alt);
+  transition: all .9s ease-out;
+}
+
+.partImageFirst {
+  background-position: top center;
+  border-radius: 50% 50% 0 0;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.partOuterImage.visible .partImageFirst {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.partImageLast {
+  background-position: bottom center;
+  border-radius: 0 0 50% 50%;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.partOuterImage.visible .partImageLast {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.partOuterCard:first-child {
+  transition: all .9s ease-out;
+  opacity: .8;
+  transform: skew(45deg) translateX(100%);
+}
+.partOuterCard:last-child {
+  opacity: .8;
+  transition: all .9s ease-out;
+  transform: translateX(-100%);
+}
+
+.partOuterCard.visible:first-child, 
+.partOuterCard.visible:last-child {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.partCard {
+  text-align: center;
+  background-color: var(--color-accent); /* Sandy caramel */
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-surface-alt); /* Semi-transparent coffee */
+}
+
+.partOuterText {
+  opacity: 0;
+  transition: opacity .9s ease-out;
+}
+.partOuterText.visible {
+  opacity: 1;
+}
+.partText {
+  padding: var(--spacing-md);
+}
+
+.partTitle {
+  font-family: sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-alt); /* Creamy white */
+  margin-bottom: var(--spacing-sm);
+}
+
+.partDescription {
+  font-family: sans-serif;
+  font-size: var(--font-size-sm);
+  line-height: calc(var(--font-size-sm) * 1.5);
+  letter-spacing: calc(var(--font-size-xs) / 15);
+  font-weight: 500;
+  color: var(--color-text-alt-light); /* Light caramel */
+}
+
+.partText .partDescription {
+  text-align: center;
+  color: var(--color-text-light); /* Soft mocha / Light caramel */
+}
+
+@media (min-width: 768px) {
+  .partListInner {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+  }
+
+  .column {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionMain {
+    padding: var(--spacing-xl) calc(var(--spacing-xl) * 2);
+  }
+}

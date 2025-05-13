@@ -1,14 +1,114 @@
+/* ===== Базовые переменные по умолчанию (светлая тема) ===== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-background: #f8f4f0; /* Creamy off-white */
+  --color-background-light: #ffffff; /* Pure white */
+  --color-background-alt: #322f2f; /* Dark coffee brown */
+  --color-background-alt-dark: #221f1f; /* Deeper coffee */
+  --color-background-alt-dark-opacity: #221f1f88; /* Deeper coffee */
+  
+  --color-surface: #f0e6dc; /* Warm caramel */
+  --color-surface-light: #fdf6e3; /* Light creamy */
+  --color-surface-alt: rgba(60, 47, 47, 0.7); /* Semi-transparent coffee */
+  
+  --color-text: #3f3f3f; /* Dark chocolate */
+  --color-text-light: #5c4b4b; /* Soft mocha */
+  --color-text-alt: #f8f8f4; /* Creamy white */
+  --color-text-alt-light: #f8e8d8; /* Light caramel */
+  
+  --color-accent: #c2aa88; /* Sandy caramel */
+  --color-accent-light: #f1d8a8; /* Light golden caramel */
+  --color-accent-dark: #8c6b4b; /* Deep caramel */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #2c2522; /* Dark roasted coffee */
+    --color-background-light: #3b2f2c; /* Lighter coffee */
+    --color-background-alt: #eae4e0; /* Creamy off-white */
+    --color-background-alt-dark: #dad4d0; /* Creamy off-white */
+    
+    --color-surface: #322f2f; /* Dark coffee brown */
+    --color-surface-light: #4a3b38; /* Medium coffee */
+    --color-surface-alt: rgba(248, 244, 240, 0.7); /* Semi-transparent creamy */
+    
+    --color-text: #f8f8f4; /* Creamy white */
+    --color-text-light: #f8e8d8; /* Light caramel */
+    --color-text-alt: #3f3f3f; /* Dark chocolate */
+    --color-text-alt-light: #6c5b5b; /* Soft mocha */
+    
+    --color-accent: #d1b494; /* Brighter caramel */
+    --color-accent-light: #7a5638; /* Bright golden caramel */
+    --color-accent-dark: #f1d8a8; /* Deep roasted caramel */
   }
 }
+
+:root {
+  /* ===== Адаптивные отступы (через calc, в rem) ===== */
+  --spacing-xs: calc(0.5rem + 0.75vw);
+  --spacing-sm: calc(.7rem + 1.1vw);
+  --spacing-md: calc(.95rem + 2vw);
+  --spacing-lg: calc(1.7rem + 2.5vw);
+  --spacing-xl: calc(2.5rem + 4vw);
+  
+  /* ===== Адаптивные закругления (через calc, в rem) ===== */
+  --radius-xs: calc(0.25rem + 0.3vw);
+  --radius-sm: calc(0.5rem + 0.4vw);
+  --radius-md: calc(0.75rem + 0.6vw);
+  --radius-lg: calc(1.25rem + 0.9vw);
+  --radius-xl: calc(2.1rem + 1.4vw);
+  
+  /* ===== Адаптивные шрифты (через clamp + calc) ===== */
+  --font-size-xs: clamp(calc(0.55rem), calc(0.5rem + 0.55vw), calc(0.875rem));
+  --font-size-sm: clamp(calc(.75rem), calc(.65rem + .75vw), calc(1.75rem));
+  --font-size-md: clamp(calc(.7rem), calc(.65rem + 1.25vw), calc(2.5rem));
+  --font-size-lg: clamp(calc(1rem), calc(1rem + 1.7vw), calc(3.5rem));
+  --font-size-xl: clamp(calc(1.4rem), calc(1.35rem + 2.5vw), calc(5.5rem));
+  
+  --card-min-height: 250px;
+  --header-height: 80px;
+}
+
+/* Принудительное применение светлой темы */
+[data-theme="day"] {
+  --color-background: #f8f4f0; /* Creamy off-white */
+  --color-background-light: #ffffff; /* Pure white */
+  --color-background-alt: #322f2f; /* Dark coffee brown */
+  --color-background-alt-dark: #221f1f; /* Deeper coffee */
+  
+  --color-surface: #f0e6dc; /* Warm caramel */
+  --color-surface-light: #fdf6e3; /* Light creamy */
+  --color-surface-alt: rgba(60, 47, 47, 0.7); /* Semi-transparent coffee */
+  
+  --color-text: #3f3f3f; /* Dark chocolate */
+  --color-text-light: #5c4b4b; /* Soft mocha */
+  --color-text-alt: #f8f8f4; /* Creamy white */
+  --color-text-alt-light: #f8e8d8; /* Light caramel */
+  
+  --color-accent: #c2aa88; /* Sandy caramel */
+  --color-accent-light: #f1d8a8; /* Light golden caramel */
+  --color-accent-dark: #8c6b4b; /* Deep caramel */
+}
+
+/* Принудительное применение тёмной темы */
+[data-theme="night"] {
+    --color-background: #2c2522; /* Dark roasted coffee */
+    --color-background-light: #3b2f2c; /* Lighter coffee */
+    --color-background-alt: #e8e4e0; /* Creamy off-white */
+    --color-background-alt-dark: #d8d4d0; /* Creamy off-white */
+    
+    --color-surface: #322f2f; /* Dark coffee brown */
+    --color-surface-light: #4a3b38; /* Medium coffee */
+    --color-surface-alt: rgba(248, 244, 240, 0.7); /* Semi-transparent creamy */
+    
+    --color-text: #f8f8f4; /* Creamy white */
+    --color-text-light: #f8e8d8; /* Light caramel */
+    --color-text-alt: #3f3f3f; /* Dark chocolate */
+    --color-text-alt-light: #6c5b5b; /* Soft mocha */
+    
+    --color-accent: #d1b494; /* Brighter caramel */
+    --color-accent-light: #7a5638; /* Bright golden caramel */
+    --color-accent-dark: #f1d8a8; /* Deep roasted caramel */
+  }
 
 html,
 body {
@@ -17,9 +117,10 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-md);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,13 +131,39 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h2 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-sm);
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+section {
+  overflow: hidden;
 }

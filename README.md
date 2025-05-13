@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Craft-Cafe Client
 
-## Getting Started
+  Craft-Cafe Client — это личный некоммерческий проект, разработанный под лицензией Apache License 2.0. 
+Созданный с использованием Next.js, React и TypeScript, этот первый релиз представляет собой полностью функциональный одностраничный лендинг с поддержкой интернационализации для английского, русского и китайского языков через next-intl. 
+Кодовая база спроектирована с учетом модульности и масштабируемости, что закладывает прочную основу для будущих улучшений, таких как интеграция с серверной частью или добавление новых страниц.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Ключевые особенности
+- **Next.js**: Использует серверный рендеринг и статическую генерацию страниц для высокой производительности и оптимизации SEO.
+- **TypeScript**: Повышает надежность и удобство поддержки кода за счет строгой типизации.
+- **Интернационализация**: Поддерживает английский, русский и китайский языки с динамическим переключением через next-intl.
+- **Собственная реализация**: Содержит компоненты и стили, написанные с нуля, что обеспечивает гибкость и контроль над кодом.
+- **Модульная архитектура**: Структурирована для удобного обслуживания и будущего расширения с четким разделением ответственности.
+
+
+## Требования
+- Node.js >= 18.x
+- npm >= 9.x
+
+
+## Начало работы
+
+1. Клонируйте репозиторий:
+  ```bash
+    git clone https://github.com/web-sender/craft-cafe.git
+    cd myapp-client
+  ```
+
+2. Установите зависимости:
+  ```bash
+    npm install
+  ```
+
+3. Создайте файл .env.local в корневой папке проекта со следующим содержимым:
+  ```env
+    API_BASE_URL=http://localhost:3000
+  ```
+Примечание: Убедитесь, что API_BASE_URL указывает на домен (например, http://localhost:3000) без слэша в конце.
+
+4. Запустите сервер разработки:
+  ```bash
+    npm run dev
+  ```
+
+5. Откройте [http://localhost:3000](http://localhost:3000) в вашем браузере.
+
+6. Для продакшен-сборки:
+  ```bash
+    npm run build
+    npm run start
+  ```
+
+
+## Структура проекта
+
+Проект организован с акцентом на ясность и масштабируемость, с фокусом на модульность:
+
+```
+├── public/                     # Статические ресурсы (изображения)
+│   ├── icon/                  # Иконки, включая активы для социальных сетей
+│   │   └── social/
+│   ├── popular/               # Изображения для секции популярных товаров
+│   ├── section/               # Изображения для общих секций страницы
+│   └── stories/               # Изображения для секции историй
+├── src/
+│   ├── app/                   # Роутер Next.js
+│   │   ├── api/               # API-маршруты для динамической функциональности
+│   │   │   └── locale/        # Обработка переключения языков с сохранением в cookies
+│   ├── i18n/                  # Конфигурация `next-intl`
+│   ├── lib/                   # Утилиты и конфигурация (например, объект config для работы с переменными окружения)
+│   └── page/                  # Логика и компоненты страниц
+│       ├── actions/           # Серверные действия или утилитарные функции
+│       ├── content/           # JSON-файлы для переводов и содержимого секций
+│       ├── home/              # Компоненты главной страницы
+│       │   └── components/    # Дочерние компоненты для секций главной страницы
+│       ├── hooks/             # Пользовательские хуки React
+│       ├── layout/            # Компоненты, связанные с макетом
+│       │   ├── components/    # Общие компоненты макета
+│       │   ├── footer/        # Компоненты подвала
+│       │   └── header/        # Компоненты шапки
+│       └── styles/            # Стили CSS/SCSS
+│           ├── home/          # Стили для секций главной страницы
+│           └── layout/        # Стили для компонентов макета
+│               ├── footer/    # Стили для подвала
+│               └── header/    # Стили для шапки
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  Содержимое управляется через JSON-файлы в src/page/content/, а изображения организованы в public/ в соответствии с секциями главной страницы (например, popular/ и stories/). 
+Компоненты и стили сгруппированы по страницам и макетам, что упрощает поддержку и будущие обновления. 
+Папка lib/ содержит утилиты, включая объект config для доступа к переменным окружения, таким как API_BASE_URL.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Интернационализация
 
-## Learn More
+  Приложение поддерживает английский, русский и китайский языки через next-intl. 
+Переключение языков осуществляется динамически с помощью JavaScript и сохраняется в cookies. 
+Файлы переводов хранятся в виде JSON в src/page/content/ (например, en.json, ru.json, zh.json) с учетом тональных различий для каждого языка. 
+API-маршрут locale автоматически определяет доступные языки.
 
-To learn more about Next.js, take a look at the following resources:
+Для добавления нового языка:
+1. Добавьте новый JSON-файл в `src/page/content/` (например, `es.json`), убедившись, что его структура соответствует существующим файлам (например, `en.json`, `ru.json`).
+2. Проверьте переключение языков в интерфейсе.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Доступные скрипты
+- `npm run dev` — Запускает сервер разработки.
+- `npm run build` — Собирает приложение для продакшена.
+- `npm run start` — Запускает собранное приложение в продакшен-режиме.
+- `npm run lint` — Запускает встроенную конфигурацию ESLint от Next.js для проверки качества кода.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Будущие улучшения
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Эта первая версия представляет собой отшлифованный одностраничный лендинг, готовый к использованию. Планы на будущее включают:
+
+- Интеграцию с серверной частью для динамического контента.
+- Добавление новых страниц в зависимости от реализации серверной части.
+- Оптимизацию организации ресурсов (например, public/popular/ и public/stories/) для поддержки расширенной функциональности.
+- Внедрение модульных тестов и более глубокую интеграцию TypeScript для повышения надежности.
+
+
+## Лицензия
+
+Проект распространяется под лицензией Apache License 2.0. Подробности см. в файле LICENSE.
+
+## Контакты
+
+Для вопросов или предложений, пожалуйста, создайте issue в [GitHub repository](https://github.com/web-sender/craft-cafe).
