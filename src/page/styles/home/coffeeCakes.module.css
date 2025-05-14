@@ -45,29 +45,29 @@
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid var(--color-surface-alt);
-  transition: all .9s ease-out;
+  transition: transform .9s ease-out, opacity .9s ease-out;
 }
 
+.partOuterImage.visible .partImageFirst {
+  opacity: 1;
+  transform: translateY(0%);
+}
 .partImageFirst {
   background-position: top center;
   border-radius: 50% 50% 0 0;
   opacity: 0;
   transform: translateY(100%);
 }
-.partOuterImage.visible .partImageFirst {
-  opacity: 1;
-  transform: translateY(0%);
-}
 
+.partOuterImage.visible .partImageLast {
+  opacity: 1;
+  transform: translateY(-50%);
+}
 .partImageLast {
   background-position: bottom center;
   border-radius: 0 0 50% 50%;
   transform: translateY(-100%);
   opacity: 0;
-}
-.partOuterImage.visible .partImageLast {
-  opacity: 1;
-  transform: translateY(-50%);
 }
 
 .partOuterCard:first-child {

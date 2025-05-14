@@ -34,22 +34,25 @@ export async function GET() {
   }
 }
 
+
 export async function POST(request: Request) {
   const { locale } = await request.json();
   try {
     const locales = await getLocales()
-    if (!locales.includes(locale)) {
-      return NextResponse.json({ error: 'Invalid locale' }, { status: 400 });
+    for (const accessLocale of locales) {
+      if (locale === accessLocale || locale.startsWith(accessLocale)) {
+        
+        const response = NextResponse.json({ success: true });
+        response.cookies.set('NEXT_LOCALE', accessLocale, {
+          path: '/',
+          sameSite: 'strict',
+          maxAge: 31536000, // 1 год
+        });
+        
+        return response;
+      }
     }
-  
-    const response = NextResponse.json({ success: true });
-    response.cookies.set('NEXT_LOCALE', locale, {
-      path: '/',
-      sameSite: 'strict',
-      maxAge: 31536000, // 1 год
-    });
-  
-    return response;
+    return NextResponse.json({ error: 'Invalid locale' }, { status: 400 });
   } catch (error: unknown) {
     const message: string = errorToString(error)
     

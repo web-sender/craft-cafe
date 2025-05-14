@@ -3,6 +3,7 @@
   align-items: center;
   gap: var(--spacing-xs);
   width: 100%;
+  margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -32,11 +33,12 @@
 }
 
 .toLeft::before, .toRight::before {
+  border-radius: 50%;
   content: '';
   position: absolute;
-  top: 0;
-  width: 90%;
-  height: 100%;
+  top: 15%;
+  width: 60%;
+  height: 70%;
   background-color: var(--color-accent);
   transition: all .35s ease-out;
 }
@@ -45,7 +47,7 @@
 }
 
 .toLeft::before {
-  right: 0%;
+  right: 15%;
   clip-path: polygon(
     60% 10%,   /* Верхняя точка выреза */
     80% 50%,   /* Центральная точка выреза (вогнутость) */
@@ -54,7 +56,7 @@
   );
 }
 .toRight::before {
-  left: 0%;
+  left: 15%;
   clip-path: polygon(
     40% 10%, /* Верхняя точка выреза */
     20% 50%, /* Центральная точка выреза (вогнутость) */

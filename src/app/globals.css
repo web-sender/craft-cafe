@@ -144,11 +144,6 @@ h2 {
   font-size: var(--font-size-md);
 }
 
-p {
-  font-size: var(--font-size-md);
-  margin-bottom: var(--spacing-sm);
-}
-
 a {
   color: inherit;
   text-decoration: none;

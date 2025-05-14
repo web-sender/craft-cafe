@@ -19,7 +19,7 @@ export default function Menu({ locales }: MenuProps) {
 
   return (
     <div className={styles.menuWrapper}>
-      <MenuButton isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      <MenuButton isOpen={isMenuOpen} toggle={toggleMenu} />
       <div className={`${styles.menu} ${isMenuOpen ? styles.open : ''}`}>
         <div className={styles.menuLanguage}>
           <LanguageSwitcher locales={locales}/>

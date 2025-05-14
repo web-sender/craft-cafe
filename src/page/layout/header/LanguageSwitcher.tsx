@@ -42,6 +42,7 @@ export default function LanguageSwitcher({ locales }: LanguageProps) {
   const togglePanel = () => {
     setIsOpen((prev) => !prev);
   };
+  
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

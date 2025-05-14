@@ -21,28 +21,28 @@
 
 .featureCardOuter {
   /* Верхний контейнер для тестирования */
+  transition: transform .5s ease-out;
+}
+.featureCardOuter:hover {
+  transform: scale(1.02) translateX(.5%) translateY(-.5%);
 }
 
 .featureCardMain {
   width: 100%; /* Мобильные устройства */
+  padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-surface-alt);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   opacity: 0;
   transform: scale(.5) translateY(-40%);
-  transition: all 0.4s ease-out;
+  transition: transform .4s ease-out, opacity .4s ease-out;
   overflow: hidden;
 }
+
 .featureCardOuter.visible .featureCardMain {
-  padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
-  transition: all .8s ease-out;
+  transition: transform .9s ease-out, opacity .9s ease-out;
   opacity: 1;
   transform: scale(1) translateY(0%);
-}
-
-.featureCardMain:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 6px 16px rgba(43, 43, 56, 0.15); /* Adjusted shadow for dark mode */
 }
 
 .featureCardInner {
@@ -51,12 +51,12 @@
   justify-content: space-between;
   min-height: 350px;
   gap: var(--spacing-md);
-  transform: translateX(-100%);
-  transition: all .2s ease-out;
+  transform: translateX(-110%);
+  transition: transform .2s ease-out;
 }
 .featureCardOuter.visible .featureCardInner {
   transform: translateX(0%);
-  transition: all .9s ease-out .7s;
+  transition: transform 1s ease-out .9s;
 }
 
 .featureCardTitle {

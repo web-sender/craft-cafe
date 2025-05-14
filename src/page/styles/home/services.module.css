@@ -23,11 +23,11 @@
 }
 
 .cardListOuter {
-  transition: all .3s ease-out;
+  transition: transform .3s ease-out;
   transform: translateY(60%);
 }
 .sectionInner.visible .cardListOuter {
-  transition: all 1.8s ease-out;
+  transition: transform 1.8s ease-out;
   transform: translateY(0%);
 }
 
@@ -82,10 +82,10 @@
   gap: var(--spacing-sm);
   transform: translateY(100%);
   opacity: 0;
-  transition: all .4s ease-out;
+  transition: transform .4s ease-out, opacity .4s ease-out;
 }
 .sectionInner.visible .cardContent {
-  transition: all 1s ease-out 1.8s;
+  transition: transform 1s ease-out 1.8s, opacity 1s ease-out 1.8s;
   opacity: 1;
   transform: translateY(0%);
 }

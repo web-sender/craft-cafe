@@ -47,7 +47,7 @@
   border: 1px solid var(--color-border);
   transform: scale(0);
   opacity: .4;
-  transition: all .9s ease-out;
+  transition: opacity .9s ease-out, transform .9s ease-out;
 }
 .categoryOuter.visible .categoryMain {
   opacity: 1;

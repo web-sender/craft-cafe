@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { headers } from 'next/headers';
 import Head from 'next/head';
+import Notification from '@/layout/Notification';
 import Header from '@/layout/Header';
 import Footer from '@/layout/Footer';
 import './globals.css';
@@ -137,6 +138,14 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
+          <Notification cssStyles={{
+            position: 'fixed', 
+            bottom: 'var(--spacing-md)', 
+            right: 'var(--spacing-md)',
+            left: 'var(--spacing-md)',
+            zIndex: '1000',
+            width: 'auto'
+          }}/>
           {children}
           <Footer />
         </NextIntlClientProvider>

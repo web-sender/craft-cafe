@@ -47,7 +47,7 @@
   border-radius: var(--radius-lg);
   z-index: 2;
   transform: skew(-45deg, -45deg) translateX(-100%);
-  transition: all .4s ease-out;
+  transition: transform .4s ease-out;
   overflow: hidden;
 }
 .cardImage {
@@ -56,7 +56,7 @@
 
 .cardContainer.visible .cardImageContainer {
   transform: skew(0deg, 0deg) translateX(0%);
-  transition: all 1.1s ease-out;
+  transition: transform 1.1s ease-out;
 }
 
 .decorTopRight {
@@ -71,13 +71,13 @@
   right: -7vw;
   opacity: .6;
   transform: translateY(100%);
-  transition: all .4s ease-out;
+  transition: transform .4s ease-out, opacity .4s ease-out;
 }
 
 .cardContainer.visible .decorTopRight {
   opacity: 1;
   transform: translateY(0%);
-  transition: all 1.1s ease-out;
+  transition: transform 1.1s ease-out, opacity 1.1s ease-out;
 }
 
 .cardContent {
@@ -94,14 +94,14 @@
   text-align: left;
   transform: scale(0);
   opacity: .1;
-  transition: all .4s ease-out;
+  transition: transform .4s ease-out, opacity .4s ease-out;
   z-index: 3;
 }
 
 .cardContainer.visible .cardContent {
   opacity: 1;
   transform: scale(1);
-  transition: all 1.1s ease-out;
+  transition: transform 1.1s ease-out, opacity 1.1s ease-out;
 }
 
 .cardSubtitle {

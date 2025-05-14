@@ -5,16 +5,16 @@ import styles from '@/styles/layout/header.module.css';
 
 interface MenuButtonProps {
   isOpen: boolean;
-  toggleMenu: () => void;
+  toggle: () => void;
 }
 
-export default function MenuButton({ isOpen, toggleMenu }: MenuButtonProps) {
+export default function MenuButton({ isOpen, toggle }: MenuButtonProps) {
   const t = useTranslations('home.header');
 
   return (
     <button
       className={`${styles.menuButton} ${isOpen ? styles.active : ''}`}
-      onClick={toggleMenu}
+      onClick={toggle}
       aria-label={isOpen ? t('closeMenu') : t('openMenu')}
     >
       <svg className={styles.menuIcon} viewBox="0 0 24 24">

@@ -1,4 +1,7 @@
 {
+  "app": {
+    "notification": "This website is a demonstration project created solely for educational purposes. It is designed to showcase development skills and does not offer any real services or products. Please note that any interactions with the site are for illustrative purposes only and do not involve the provision of actual services."
+  },
   "home": {
     "header": {
       "title": "Craft Cafe",

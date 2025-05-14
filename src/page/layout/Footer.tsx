@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import styles from '@/styles/layout/footer.module.css';
+import Notification from '@/layout/Notification';
 import SectionNav, { INavItem } from './footer/SectionNav';
 import ExploreSection, { IItemExplore } from './footer/ExploreSection';
 import ContactInfo from './footer/ContactInfo';
@@ -54,6 +55,9 @@ export default async function FooterSection() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
+        <div className={styles.footerNotification}>
+          <Notification />
+        </div>
         <SectionNav items={navItems} />
         <div className={styles.footerContent}>
           <SubscriptionForm
